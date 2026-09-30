@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School Night</title>
+<meta name="description" content="School emails, read for you. You and your nanny hear what tomorrow needs the night before, on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1d1b19;
+    --muted: #6b6560;
+    --paper: #faf7f2;
+    --line: #e6dfd5;
+    --red: #b3261e;
+    --field: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.6 Inter, system-ui, -apple-system, sans-serif;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0 0; }
+  .brand { font: 500 15px/1 Inter, sans-serif; letter-spacing: .02em; }
+  .brand span { color: var(--red); }
+  .hero { padding: 72px 0 64px; }
+  h1, h2 { font-family: Fraunces, Georgia, serif; font-weight: 400; letter-spacing: -.01em; }
+  h1 { font-size: clamp(38px, 9vw, 60px); line-height: 1.05; margin: 0 0 24px; }
+  h1 em { font-style: normal; color: var(--red); }
+  .sub { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 5vw, 26px); line-height: 1.3; margin: 0 0 20px; }
+  .lead { color: var(--muted); margin: 0 0 36px; max-width: 34em; }
+  .btn {
+    display: inline-block; background: var(--ink); color: var(--paper); text-decoration: none;
+    font: 500 16px/1 Inter, sans-serif; padding: 17px 26px; border-radius: 999px; border: 0; cursor: pointer;
+  }
+  .btn:hover { background: #000; }
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(28px, 6vw, 36px); line-height: 1.15; margin: 0 0 28px; }
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+  ol.steps li { counter-increment: s; display: grid; grid-template-columns: 40px 1fr; gap: 4px 12px; margin: 0 0 26px; }
+  ol.steps li::before { content: counter(s); font-family: Fraunces, Georgia, serif; font-size: 26px; line-height: 1.1; color: var(--red); grid-row: span 2; }
+  ol.steps strong { font-weight: 500; }
+  ol.steps p { margin: 0; color: var(--muted); }
+  .price { font-family: Fraunces, Georgia, serif; font-size: clamp(30px, 7vw, 40px); margin: 0 0 6px; }
+  .note { color: var(--muted); margin: 0 0 12px; }
+  form { display: grid; gap: 16px; margin-top: 8px; }
+  label { display: grid; gap: 6px; font-size: 15px; font-weight: 500; }
+  label small { font-weight: 400; color: var(--muted); }
+  input, select {
+    font: 400 17px/1.3 Inter, sans-serif; color: var(--ink); background: var(--field);
+    border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px; width: 100%;
+  }
+  input:focus, select:focus { outline: 2px solid var(--ink); outline-offset: 1px; border-color: transparent; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .error { color: var(--red); font-size: 15px; min-height: 1.4em; margin: 0; }
+  .privacy { color: var(--muted); font-size: 14px; margin: 0; }
+  .thanks { display: none; font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 1.35; }
+  blockquote { margin: 0; font-family: Fraunces, Georgia, serif; font-size: clamp(20px, 4.6vw, 24px); line-height: 1.45; }
+  .sign { color: var(--muted); margin: 18px 0 0; font-size: 15px; }
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="brand">School Night<span>.</span></div></header>
+
+  <div class="hero">
+    <h1>She was the only one not wearing <em>red</em>.</h1>
+    <p class="sub">You didn't forget her. You never saw the email.</p>
+    <p class="lead">We read the school emails for you, then tell you and your nanny the night before, on WhatsApp, in her language.</p>
+    <a class="btn" href="#join">Never miss a school day again</a>
+  </div>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Forward your school emails once.</strong><p>One simple Gmail rule, and every school email comes to School Night.</p></li>
+      <li><strong>We read every one.</strong><p>Uniform days, trips, forms, money, early pickups. We find what matters and when.</p></li>
+      <li><strong>The night before and the morning of.</strong><p>You and your nanny get a WhatsApp the evening before and again in the morning, at the times you choose. We suggest 8pm and 6am.</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Your nanny hears it too.</h2>
+    <p>In most UAE homes, you read the email but she gets the uniform ready. School Night sends her a short voice note in her language: English, Tagalog, Hindi and more.</p>
+    <p>She taps Done. You see it's handled, without sending a single message yourself.</p>
+  </section>
+
+  <section id="join">
+    <p class="price">AED 29 a month</p>
+    <p class="note">First month free. One subscription covers both parents and your nanny.</p>
+    <p class="note">We're opening to the first UAE families soon. Join the list and we'll message you on WhatsApp when your place is ready.</p>
+
+    <form id="form" novalidate>
+      <label>Your name
+        <input name="name" autocomplete="name" required maxlength="80">
+      </label>
+      <label>WhatsApp number
+        <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="050 123 4567" required>
+      </label>
+      <label><span>Your child's school <small>(optional)</small></span>
+        <input name="school" maxlength="120">
+      </label>
+      <label>Children at school
+        <select name="kids" required>
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+          <option value="4">4</option><option value="5">5 or more</option>
+        </select>
+      </label>
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="error" id="error" role="alert"></p>
+      <button class="btn" type="submit" id="submit">Join the waitlist</button>
+      <p class="privacy">We only use your number to contact you about School Night. No spam, no sharing.</p>
+    </form>
+    <p class="thanks" id="thanks">You're on the list. We'll message you on WhatsApp when School Night opens.</p>
+  </section>
+
+  <section>
+    <blockquote>We built the first version of School Night for our own family, after our daughter missed two school dress codes in one week. The emails were there. We were just busy, like every parent we know. Now our home hears the reminder the night before, and nothing slips.</blockquote>
+    <p class="sign">The School Night team</p>
+  </section>
+
+  <footer>School Night. Made in the UAE.</footer>
+</div>
+
+<script>
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxr3_yRzNkiA0V_gnpA8_3CSipsW2Nuh4nwJWuiI_GzP-sW9jHCKrE5o4kObXXMdg5UtQ/exec';
+
+  // Same rules as waitlist/src/validate.js (the server checks again).
+  function normalizePhone(raw) {
+    var s = String(raw || '').trim();
+    var plus = s.charAt(0) === '+';
+    var digits = s.replace(/\D/g, '');
+    if (!digits) return null;
+    if (!plus && digits.indexOf('00') === 0) { digits = digits.slice(2); plus = true; }
+    if (!plus && /^05\d{8}$/.test(digits)) digits = '971' + digits.slice(1);
+    if (digits.length < 8 || digits.length > 15) return null;
+    return '+' + digits;
+  }
+
+  var form = document.getElementById('form');
+  var errorEl = document.getElementById('error');
+  var submit = document.getElementById('submit');
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    errorEl.textContent = '';
+    var data = new FormData(form);
+    var name = String(data.get('name') || '').trim();
+    if (name.length < 2) { errorEl.textContent = 'Please enter your name.'; return; }
+    if (!normalizePhone(data.get('whatsapp'))) { errorEl.textContent = 'Please enter a valid WhatsApp number.'; return; }
+
+    var body = new URLSearchParams();
+    data.forEach(function (v, k) { body.append(k, v); });
+    var q = new URLSearchParams(location.search);
+    ['utm_source', 'utm_campaign', 'utm_content'].forEach(function (k) { if (q.get(k)) body.append(k, q.get(k)); });
+    body.append('referrer', document.referrer || '');
+
+    submit.disabled = true;
+    submit.textContent = 'Sending...';
+    fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: body })
+      .then(function () {
+        form.style.display = 'none';
+        document.getElementById('thanks').style.display = 'block';
+      })
+      .catch(function () {
+        errorEl.textContent = 'Could not send, please try again.';
+        submit.disabled = false;
+        submit.textContent = 'Join the waitlist';
+      });
+  });
+</script>
+</body>
+</html>
